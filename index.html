@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FPT Play - Xem phim và truyền hình trực tuyến</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header id="header">
+    <input type="checkbox" id="header__menu-mobile-toggle">
+    <div class="header__menu-mobile">
+      <label for="header__menu-mobile-toggle"></label>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="header__menu-mobile-overlay">
+      <label for="header__menu-mobile-toggle"></label>
+    </div>
+    <a href="index.html" class="header__logo"><img src="images/logo.png" alt="header logo" class="header__logo"></a>
+    <nav class="header__menu">
+      <ul>
+        <li><a href="index.html" class="header__link link-active">Trang chủ</a></li>
+        <li><a href="#" class="header__link">Truyền hình</a></li>
+        <li><a href="#" class="header__link">HBO GO</a></li>
+        <li><a href="#" class="header__link">Phim bộ</a></li>
+        <li><a href="#" class="header__link">Thể thao</a></li>
+        <li><a href="#" class="header__link">Anime</a></li>
+        <li><a href="#" class="header__link">TV show</a></li>
+        <li>
+          <input type="checkbox" id="header__dropdown-toggle">
+          <span class="header__link">Xem thêm
+            <label for="header__dropdown-toggle"></label>
+          </span>
+          <div class="header__dropdown">
+            <ul>
+              <li><a href="#" class="header__link">Phim lẻ</a></li>
+              <li><a href="#" class="header__link">Phim chiếu rạp</a></li>
+              <li><a href="#" class="header__link">Gói đặc sắc</a></li>
+              <li><a href="#" class="header__link">Thiếu nhi</a></li>
+              <li><a href="#" class="header__link">Hài</a></li>
+              <li><a href="#" class="header__link">Edumall</a></li>
+              <li><a href="#" class="header__link">Học Online</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#" class="header__link">
+            <ion-icon name="search-outline" class="header__search"></ion-icon>
+          </a>
+        </li>
+        <li><a href="#" class="header__link btn btn--pill btn--primary">Mua gói</a></li>
+        <li><a href="login.html" class="header__link">Đăng nhập</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="content">
+    <div class="main-carousel container">
+      <!-- direction -->
+      <input type="radio" name="arrow-dir" id="tg-1" checked>
+      <input type="radio" name="arrow-dir" id="tg-2">
+      <input type="radio" name="arrow-dir" id="tg-3">
+      <input type="radio" name="arrow-dir" id="tg-4">
+      <input type="radio" name="arrow-dir" id="tg-5">
+      <input type="radio" name="arrow-dir" id="tg-6">
+
+      <div class="items">
+        <div id="item-1">
+          <a href="#"><img src="images/main-carousel/main-carousel1.webp" alt="item-1"></a>
+          <div class="tag">
+            <span>Phát song song</span>
+          </div>
+          <div class="text">
+            <h2 class="name">Nỗi Vương Vấn Của Hạ Tiên Sinh</h2>
+            <h3 class="episode">Tập 18</h3>
+            <p class="info">Bộ phim về chuyện cưới trước yêu sau của chàng tổng tài và cô bác sĩ.</p>
+            <a href="#" class="btn watch-btn">Xem ngay
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <label for="tg-6" class="pre-dir">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </label>
+          <label for="tg-2" class="next-dir">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </label>
+        </div>
+        <div id="item-2">
+          <a href="#"><img src="images/main-carousel/main-carousel2.webp" alt="item-2"></a>
+          <div class="tag">
+            <span>Phát song song</span>
+          </div>
+          <div class="text">
+            <h2 class="name">Thẩm Phán Ác Ma</h2>
+            <h3 class="episode">Tập 8</h3>
+            <p class="info">Ông hoàng rating Ji Sung trở lại màn ảnh nhỏ với hình tượng đen tối.</p>
+            <a href="#" class="btn watch-btn">Xem ngay
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <label for="tg-1" class="pre-dir">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </label>
+          <label for="tg-3" class="next-dir">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </label>
+        </div>
+        <div id="item-3">
+          <a href="#"><img src="images/main-carousel/main-carousel3.webp" alt="item-3"></a>
+          <div class="tag">
+            <span class="age">16+</span>
+            <span class="vip">
+              <ion-icon name="star"></ion-icon>VIP
+            </span>
+          </div>
+          <div class="text">
+            <h2 class="name">Trai Hư Trọn Đời</h2>
+            <h3 class="episode">Bad Boys For Life</h3>
+            <p class="info">Màn tái xuất hài hước và đáng giá của bộ đôi “lầy lội” Will Smith và Martin Lawrence.</p>
+            <a href="#" class="btn watch-btn">Xem ngay
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <label for="tg-2" class="pre-dir">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </label>
+          <label for="tg-4" class="next-dir">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </label>
+        </div>
+        <div id="item-4">
+          <a href="#"><img src="images/main-carousel/main-carousel4.webp" alt="item-4"></a>
+          <div class="tag">
+            <span class="hbo">HBO GO</span>
+            <span class="vip">
+              <ion-icon name="star"></ion-icon>VIP
+            </span>
+          </div>
+          <div class="text">
+            <h2 class="name">Hội Sát Thủ</h2>
+            <h3 class="episode">Assassin's Creed'</h3>
+            <p class="info">Bộ phim điện ảnh được chuyển thể từ tựa game nổi tiếng cùng tên.</p>
+            <a href="#" class="btn watch-btn">Xem ngay
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <label for="tg-3" class="pre-dir">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </label>
+          <label for="tg-5" class="next-dir">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </label>
+        </div>
+        <div id="item-5">
+          <a href="#"><img src="images/main-carousel/main-carousel5.webp" alt="item-5"></a>
+          <div class="tag">
+            <span>Phát song song</span>
+          </div>
+          <div class="text">
+            <h2 class="name">Tuổi Trẻ Sục Sôi</h2>
+            <h3 class="episode"> Hot Young Bloods</h3>
+            <p class="info">Tác phẩm điện ảnh từng khuynh đảo phòng vé xứ Kim chi một thời.</p>
+            <a href="#" class="btn watch-btn">Xem ngay
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <label for="tg-4" class="pre-dir">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </label>
+          <label for="tg-6" class="next-dir">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </label>
+        </div>
+        <div id="item-6">
+          <a href="#"><img src="images/main-carousel/main-carousel6.webp" alt="item-6"></a>
+          <div class="tag">
+            <span class="age">16+</span>
+            <span class="vip">
+              <ion-icon name="star"></ion-icon>VIP
+            </span>
+          </div>
+          <div class="text">
+            <h2 class="name">Vụ Cướp May Rủi</h2>
+            <h3 class="episode">Logan Lucky</h3>
+            <p class="info">Siêu bựa và hấp dẫn khi điệp viên 007 và Kylo Ren cùng nhau thực hiện một "vụ cướp thế kỷ".
+            </p>
+            <a href="#" class="btn watch-btn">Xem ngay
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <label for="tg-5" class="pre-dir">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </label>
+          <label for="tg-1" class="next-dir">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </label>
+        </div>
+        <span class="dot">
+          <label for="tg-1"></label>
+          <label for="tg-2"></label>
+          <label for="tg-3"></label>
+          <label for="tg-4"></label>
+          <label for="tg-5"></label>
+          <label for="tg-6"></label>
+        </span>
+      </div>
+    </div>
+    <div class="movies container">
+      <div class="category">
+        <input type="radio" name="dir-arr" id="pre-dir-ctg1">
+        <input type="radio" name="dir-arr" id="next-dir-ctg1">
+        <label for="pre-dir-ctg1">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </label>
+        <label for="next-dir-ctg1">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </label>
+        <h2 class="heading"> Phim bộ hot </h2>
+        <div class="row">
+          <div class="item">
+            <img src="images/category-carousel/category-carousel1.webp" class="portrait" alt="item-1">
+            <h3>Nỗi Vương Vấn Của Hạ Tiên Sinh</h3>
+            <div class="tag">
+              <span>Phát song song</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel2.webp" class="portrait" alt="item-2">
+            <h3>Kế Hoạch Nguồn Nhịp Tim</h3>
+            <div class="tag">
+              <span>Phát song song</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel3.webp" class="portrait" alt="item-3">
+            <h3>Thẩm Phán Ác Ma</h3>
+            <div class="tag">
+              <span>Phát song song</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel4.webp" class="portrait" alt="item-4">
+            <h3>Xin Chào Hỏa Diễm Lam</h3>
+            <div class="tag">
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel5.webp" class="portrait" alt="item-5">
+            <h3>Bạch Phát Vương Thi</h3>
+            <div class="tag">
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel6.webp" class="portrait" alt="item-6">
+            <h3>Mặt Nạ Hạnh Phúc</h3>
+            <div class="tag">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="category">
+        <input type="radio" name="dir-arr" id="pre-dir-ctg2">
+        <input type="radio" name="dir-arr" id="next-dir-ctg2">
+        <label for="pre-dir-ctg2">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </label>
+        <label for="next-dir-ctg2">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </label>
+        <h2 class="heading"> HBO GO </h2>
+        <div class="row">
+          <div class="item">
+            <img src="images/category-carousel/category-carousel7.webp" class="portrait" alt="item-7">
+            <h3>Hội Sát Thủ</h3>
+            <div class="tag">
+              <span class="vip">
+                <ion-icon name="star"></ion-icon>VIP
+              </span>
+              <span class="age">18+</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel8.webp" class="portrait" alt="item-8">
+            <h3>Trai Hư Trọn Đời</h3>
+            <div class="tag">
+              <span class="vip">
+                <ion-icon name="star"></ion-icon>VIP
+              </span>
+              <span class="age">16+</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel9.webp" class="portrait" alt="item-9">
+            <h3>Huyền Thoại Ngôi Sao Nhạc Rock</h3>
+            <div class="tag">
+              <span class="vip">
+                <ion-icon name="star"></ion-icon>VIP
+              </span>
+              <span class="age">18+</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel10.webp" class="portrait" alt="item-10">
+            <h3>Người Thực Thi Công Lí Phần 2</h3>
+            <div class="tag">
+              <span class="vip">
+                <ion-icon name="star"></ion-icon>VIP
+              </span>
+              <span class="age">16+</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel11.webp" class="portrait" alt="item-11">
+            <h3>Người Nhện: Trở Về Nhà</h3>
+            <div class="tag">
+              <span class="vip">
+                <ion-icon name="star"></ion-icon>VIP
+              </span>
+              <span class="age">13+</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel12.webp" class="portrait" alt="item-12">
+            <h3>Người Về Từ Cõi Chết</h3>
+            <div class="tag">
+              <span class="vip">
+                <ion-icon name="star"></ion-icon>VIP
+              </span>
+              <span class="age">18+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="category">
+        <input type="radio" name="dir-arr" id="pre-dir-ctg3">
+        <input type="radio" name="dir-arr" id="next-dir-ctg3">
+        <label for="pre-dir-ctg3">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </label>
+        <label for="next-dir-ctg3">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </label>
+        <h2 class="heading"> Thể Thao </h2>
+        <div class="row">
+          <div class="item">
+            <img src="images/category-carousel/category-carousel13.webp" alt="item-13" class="landscape">
+            <h3>Heung-Min Son tỏa sáng giúp Tottenham đánh bại MK Dons</h3>
+            <p class="live">VTV trực tiếp</p>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel14.webp" alt="item-14" class="landscape">
+            <h3>Andreas Pereira volley lập siêu phẩm</h3>
+            <p>K+ Còn khoảng 45p</p>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel15.webp" alt="item-15" class="landscape">
+            <h3>Luis Muriel 22 bàn thắng tại Serie A 2020/2021</h3>
+            <p>K+ Còn khoảng 95p</p>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel16.webp" alt="item-16" class="landscape">
+            <h3>Malinovskiy kiến tạo Serie A 2020/2021</h3>
+            <p>K+ Còn khoảng 135p</p>
+          </div>
+        </div>
+      </div>
+      <div class="category">
+        <input type="radio" name="dir-arr" id="pre-dir-ctg4">
+        <input type="radio" name="dir-arr" id="next-dir-ctg4">
+        <label for="pre-dir-ctg4">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </label>
+        <label for="next-dir-ctg4">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </label>
+        <h2 class="heading"> Truyền hình quốc tế MAX+ </h2>
+        <div class="row">
+          <div class="item">
+            <div class="tag">
+              <span class="vip">
+                <ion-icon name="star"></ion-icon>VIP
+              </span>
+            </div>
+            <img src="images/category-carousel/category-carousel17.webp" alt="item-17" class="landscape">
+            <h3>Giờ Phiêu Lưu</h3>
+            <p class="live">Cartoon Network HD - Đang diễn ra</p>
+          </div>
+          <div class="item">
+            <div class="tag">
+              <span class="vip">
+                <ion-icon name="star"></ion-icon>VIP
+              </span>
+            </div>
+            <img src="images/category-carousel/category-carousel18.webp" alt="item-18" class="landscape">
+            <h3>Chúng Tôi Đơn Giản Là Gấu </h3>
+            <p class="live">Cartoon Network HD - Đang diễn ra</p>
+          </div>
+          <div class="item">
+            <div class="tag">
+              <span class="vip">
+                <ion-icon name="star"></ion-icon>VIP
+              </span>
+            </div>
+            <img src="images/category-carousel/category-carousel19.webp" alt="item-19" class="landscape">
+            <h3>Siêu Nhiên (Phần 13)</h3>
+            <p>AXN HD - Còn khoảng 6h</p>
+          </div>
+          <div class="item">
+            <div class="tag">
+              <span class="vip">
+                <ion-icon name="star"></ion-icon>VIP
+              </span>
+            </div>
+            <img src="images/category-carousel/category-carousel20.webp" alt="item-20" class="landscape">
+            <h3>Huyền Thoại Tương Lai Phần 1</h3>
+            <p>Warner TV HD - Còn khoảng 5h</p>
+          </div>
+        </div>
+      </div>
+      <div class="category">
+        <input type="radio" name="dir-arr" id="pre-dir-ctg5">
+        <input type="radio" name="dir-arr" id="next-dir-ctg5">
+        <label for="pre-dir-ctg5">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </label>
+        <label for="next-dir-ctg5">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </label>
+        <h2 class="heading"> Phim chiếu rạp </h2>
+        <div class="row">
+          <div class="item">
+            <img src="images/category-carousel/category-carousel21.webp" class="portrait" alt="item-21">
+            <h3>Kẻ Vô Danh</h3>
+            <div class="tag">
+              <span>Phim chiếu rạp</span>
+              <span class="age">18+</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel22.webp" class="portrait" alt="item-22">
+            <h3>Greenland : Thảm Họa Thiên Thạch</h3>
+            <div class="tag">
+              <span>Phim chiếu rạp</span>
+              <span class="age">18+</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel23.webp" class="portrait" alt="item-23">
+            <h3>Gia Đình Chân To Phiêu Lưu Ký</h3>
+            <div class="tag">
+              <span>Phim chiếu rạp</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel24.webp" class="portrait" alt="item-24">
+            <h3>Gia Đình Crood: Kỷ Nguyên Mới</h3>
+            <div class="tag">
+              <span>Phim chiếu rạp</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel25.webp" class="portrait" alt="item-25">
+            <h3>Cuộc Sống Nhiệm Màu</h3>
+            <div class="tag">
+              <span>Phim chiếu rạp</span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/category-carousel/category-carousel26.webp" class="portrait" alt="item-26">
+            <h3>Thảm Họa Tàu Ngầm</h3>
+            <div class="tag">
+              <span>Phim chiếu rạp</span>
+              <span class="age">13+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="play-box">
+      <a href="login.html"><img src="images/play-box.png" alt="fptPlay-box"></a>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer__logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="fptPlay__logo">
+      </a>
+      <a href="#">
+        <img src="images/registered.png" alt="registered logo">
+      </a>
+      <a href="#">
+        <img src="images/protected.png" alt="protected logo">
+      </a>
+    </div>
+    <div class="footer__detail">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Gói data</a>
+          </li>
+          <li>
+            <a href="#">Quảng cáo</a>
+          </li>
+          <li>
+            <a href="#">Dịch vụ</a>
+          </li>
+          <li>
+            <a href="#">Điều khoản</a>
+          </li>
+          <li>
+            <a href="#">Chính sách</a>
+          </li>
+          <li>
+            <a href="#">Liên hệ</a>
+          </li>
+          <li>
+            <a href="#">Cửa Hàng</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img src="images/ft-nav1.png" alt="global icon">
+          </li>
+          <li>
+            <img src="images/ft-nav2.png" alt="tv icon">
+          </li>
+          <li>
+            <img src="images/ft-nav3.png" alt="apple icon">
+          </li>
+          <li>
+            <img src="images/ft-nav4.png" alt="android icon">
+          </li>
+          <li>
+            <img src="images/ft-nav5.png" alt="tv box icon">
+          </li>
+          <li>
+            <img src="images/ft-nav6.png" alt="huawei store icon">
+          </li>
+        </ul>
+      </nav>
+      <p>Công ty Cổ phần Viễn Thông FPT - Người đại diện: Ông Hoàng Việt Anh</p>
+      <p> Trụ sở: Tầng 8, tòa nhà FPT Tower, số 10 Phạm Văn Bạch, Cầu Giấy, Hà Nội</p>
+      <p>Điện thoại: 19006600. Email: support@fptplay.net</p>
+      <p>
+        Số giấy chứng nhận đăng ký kinh doanh: 0101778163 do Sở Kế Hoạch Đầu Tư
+        Thành Phố Hà Nội cấp vào ngày 28/07/2005
+      </p>
+      <p>
+        Giấy phép Cung cấp Dịch vụ Phát thanh, Truyền hình trên mạng Internet số
+        568/GP-BTTTT cấp ngày 7/12/2020.
+      </p>
+    </div>
+    <div class="footer__support">
+      <a href="#">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="#" class="btn btn--pill btn--primary">
+        <ion-icon name="alert-circle"></ion-icon>
+        <p>Hỗ trợ</p>
+      </a>
+      <div class="btn btn--pill btn--primary">
+        <ion-icon name="call"></ion-icon>
+        <p>19006600</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+button,
+.btn {
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $white;
+
+  &.btn--pill {
+    padding: rem(3) rem(15);
+    border-radius: 40px;
+  }
+
+  &.btn--rectangle {
+    height: rem(42);
+    border-radius: 3px;
+  }
+
+  &.btn--primary {
+    background-color: $primary;
+  }
+
+  &.btn--blue {
+    background-color: #3b5998;
+  }
+
+  &.btn--pink {
+    background-color: #dd4b39;
+  }
+
+}

@@ -1,0 +1,9 @@
+@keyframes shake {
+  from {
+    transform: rotate(-8deg);
+  }
+
+  to {
+    transform: rotate(8deg);
+  }
+}

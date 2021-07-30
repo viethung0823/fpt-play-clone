@@ -1,0 +1,16 @@
+.container {
+  margin: 0 auto;
+  
+  @include breakpoint-down (small) {
+    width: 90%;
+  }
+
+  @include breakpoint-range (small, medium) {
+    width: 85%;
+  }
+  
+  @include breakpoint-up(medium) {
+    width: 90%;
+    max-width: 1180px;
+  }
+}

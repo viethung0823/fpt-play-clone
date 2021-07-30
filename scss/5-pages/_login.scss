@@ -1,0 +1,144 @@
+#content {
+  padding-bottom: rem(30);
+}
+
+.login {
+  max-width: rem(380);
+  margin: 0 auto;
+
+  @include breakpoint-down (small) {
+    width: 90%;
+  }
+
+  h2 {
+    font-family: SFProDisplay-Bold;
+    text-align: center;
+    color: $white;
+    font-size: rem(22);
+    font-weight: 500;
+    margin-bottom: rem(16);
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f1f1f;
+    border-radius: 6px;
+
+    @include breakpoint-down (small) {
+      padding: rem(40) rem(30);
+    }
+
+    @include breakpoint-up (small) {
+      padding: rem(50) rem(40);
+    }
+
+    // Remove Arrows/Spinners on chrome
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input {
+      width: 100%;
+
+      &::placeholder {
+        font-size: rem(16);
+      }
+
+      &[type="number"] {
+        // Remove Arrows/Spinners
+        font-family: SFProDisplay-Regular;
+        cursor: text;
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+        font-size: rem(16);
+        color: $text2;
+        padding: 0 rem(10);
+        margin-bottom: rem(16);
+      }
+
+      &[type="password"] {
+        font-family: SFProDisplay-Regular;
+        cursor: text;
+        font-size: rem(10);
+        color: $text2;
+        padding: 0 rem(10);
+        margin-bottom: rem(30);
+      }
+
+      &[type="submit"] {
+        font-family: SFProDisplay-Bold;
+        color: $white;
+        font-size: rem(16);
+        transition: 200ms ease;
+        margin-bottom: rem(16);
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .login__link {
+      text-align: center;
+      font-size: rem(16);
+      color: #4A4A4A;
+      transition: 200ms ease;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    span {
+      width: 100%;
+      border-top: 1px solid #4A4A4A;
+      margin-top: rem(16);
+      margin-bottom: rem(10);
+
+      p {
+        position: relative;
+        display: inline-block;
+        background: #1F1F1F;
+        top: -14px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 5px;
+        text-align: center;
+        font-size: rem(16);
+        color: #4A4A4A;
+      }
+    }
+
+    .login__social {
+      width: 100%;
+      color: $white;
+      font-family: SFProDisplay-Bold;
+      font-size: rem(16);
+      text-align: center;
+      line-height: 42px;
+      margin-bottom: rem(16);
+      transition: 200ms ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &>div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: rem(8);
+
+      p {
+        color: $text2;
+        font-size: rem(16);
+        margin-right: rem(5);
+      }
+    }
+  }
+}

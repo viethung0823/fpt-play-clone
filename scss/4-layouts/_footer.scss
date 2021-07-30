@@ -1,0 +1,220 @@
+#footer {
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  padding: rem(20) 0;
+
+  @include breakpoint-down (medium) {
+    flex-direction: column;
+    align-items: center;
+
+    &>*:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+
+  @include breakpoint-up (medium) {
+    flex-direction: row;
+    align-items: flex-start;
+
+    &>*:not(:last-child) {
+      margin-right: clamp(32px, calc(2rem + ((1vw - 10.24px) * 14.0351)), 80px);
+    }
+  }
+}
+
+.footer__logo {
+  display: flex;
+
+  @include breakpoint-down (small) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &>*:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+
+  @include breakpoint-range (small, medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 56vw;
+  }
+
+  @include breakpoint-up (medium) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &>*:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+
+  &>a:first-child  img{
+    display: block;
+    width: rem(125);
+    height: rem(29);
+  }
+}
+
+.footer__detail {
+  @include breakpoint-down (medium) {
+    max-width: 87.6%;
+  }
+
+  @include breakpoint-up (medium) {
+    max-width: rem(654);
+  }
+
+  &>*:not(:last-child) {
+    margin-bottom: rem(16);
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $text2;
+    padding-bottom: rem(10);
+
+    @include breakpoint-down (medium) {
+      flex-direction: column;
+      justify-content: center;
+
+      &>*:not(:last-child) {
+        margin-bottom: rem(16);
+      }
+    }
+
+    @include breakpoint-up (medium) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      @include breakpoint-down (small) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+
+  li {
+
+    &:not(:last-child) a,
+    &:not(:last-child) img {
+      margin-right: rem(10);
+    }
+
+    a {
+      font-family: SFProDisplay-Regular;
+      font-size: rem(14);
+      color: $text2;
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+    }
+
+    img {
+      display: block;
+      width: rem(22);
+      height: rem(22);
+
+      &:not(:last-child) {
+        margin-right: rem(5);
+      }
+    }
+  }
+
+  p {
+    font-family: SFProDisplay-Regular;
+    font-size: rem(14);
+    color: $text2;
+    line-height: 1.5;
+
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+
+    @include breakpoint-down (medium) {
+      text-align: center;
+    }
+
+    @include breakpoint-up (medium) {
+      text-align: start;
+    }
+  }
+}
+
+.footer__support {
+  display: flex;
+
+  @include breakpoint-down (small) {
+    flex-direction: column;
+    align-items: center;
+
+    &>*:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  @include breakpoint-range (small, medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 42vw;
+    margin-left: rem(72);
+  }
+
+  @include breakpoint-up (medium) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &>*:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  &>*:hover {
+    animation: shake 200ms linear;
+  }
+
+  ion-icon {
+    color: $white;
+    font-size: rem(26);
+    display: block;
+
+    &[name="logo-facebook"] {
+      color: #6c6c6c;
+      font-size: rem(38);
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(6) rem(12);
+
+    p {
+      font-family: SFProDisplay-Regular;
+      font-size: rem(14);
+      color: $white;
+    }
+
+    &>*:not(:last-child) {
+      margin-right: rem(4);
+    }
+  }
+}

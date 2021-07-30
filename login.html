@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FPT Play - Xem phim và truyền hình trực tuyến</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header id="header">
+    <input type="checkbox" id="header__menu-mobile-toggle">
+    <div class="header__menu-mobile">
+      <label for="header__menu-mobile-toggle"></label>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="header__menu-mobile-overlay">
+      <label for="header__menu-mobile-toggle"></label>
+    </div>
+    <a href="index.html" class="header__logo"><img src="images/logo.png" alt="header logo" class="header__logo"></a>
+    <nav class="header__menu">
+      <ul>
+        <li><a href="index.html" class="header__link">Trang chủ</a></li>
+        <li><a href="#" class="header__link">Truyền hình</a></li>
+        <li><a href="#" class="header__link">HBO GO</a></li>
+        <li><a href="#" class="header__link">Phim bộ</a></li>
+        <li><a href="#" class="header__link">Thể thao</a></li>
+        <li><a href="#" class="header__link">Anime</a></li>
+        <li><a href="#" class="header__link">TV show</a></li>
+        <li>
+          <input type="checkbox" id="header__dropdown-toggle">
+          <span class="header__link">Xem thêm
+            <label for="header__dropdown-toggle"></label>
+          </span>
+          <div class="header__dropdown">
+            <ul>
+              <li><a href="#" class="header__link">Phim lẻ</a></li>
+              <li><a href="#" class="header__link">Phim chiếu rạp</a></li>
+              <li><a href="#" class="header__link">Gói đặc sắc</a></li>
+              <li><a href="#" class="header__link">Thiếu nhi</a></li>
+              <li><a href="#" class="header__link">Hài</a></li>
+              <li><a href="#" class="header__link">Edumall</a></li>
+              <li><a href="#" class="header__link">Học Online</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#" class="header__link">
+            <ion-icon name="search-outline" class="header__search"></ion-icon>
+          </a>
+        </li>
+        <li><a href="#" class="header__link btn btn--pill btn--primary">Mua gói</a></li>
+        <li><a href="login.html" class="header__link">Đăng nhập</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="content">
+    <div class="login">
+      <h2>Đăng nhập</h2>
+      <form class="form">
+        <input type="number" id="login__phone" class="btn btn--rectangle" placeholder="Điện Thoại" required>
+        <input type="password" id="login__password" class="btn btn--rectangle" placeholder="Mật Khẩu" required>
+        <input type="submit" class="btn btn--rectangle btn--primary" value="Đăng nhập">
+        <a href="#" class="login__link">Quên mật khẩu</a>
+        <span><p>hoặc</p></span>
+        <a href="#" class="btn btn--rectangle btn--blue login__social">Facebook</a>
+        <a href="#" class="btn btn--rectangle btn--pink login__social">Google</a>
+        <div>
+          <p>Chưa có tài khoản?</p>
+          <a href="#" class="login__link">Đăng kí ngay.</a>
+        </div>
+        <a href="#" class="login__link">Chính sách và quy định</a>
+      </form>
+    </div>
+    <div class="play-box">
+      <a href="login.html"><img src="images/play-box.png" alt="fptPlay-box"></a>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer__logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="fptPlay__logo">
+      </a>
+      <a href="#">
+        <img src="images/registered.png" alt="registered logo">
+      </a>
+      <a href="#">
+        <img src="images/protected.png" alt="protected logo">
+      </a>
+    </div>
+    <div class="footer__detail">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Gói data</a>
+          </li>
+          <li>
+            <a href="#">Quảng cáo</a>
+          </li>
+          <li>
+            <a href="#">Dịch vụ</a>
+          </li>
+          <li>
+            <a href="#">Điều khoản</a>
+          </li>
+          <li>
+            <a href="#">Chính sách</a>
+          </li>
+          <li>
+            <a href="#">Liên hệ</a>
+          </li>
+          <li>
+            <a href="#">Cửa Hàng</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img src="images/ft-nav1.png" alt="global icon">
+          </li>
+          <li>
+            <img src="images/ft-nav2.png" alt="tv icon">
+          </li>
+          <li>
+            <img src="images/ft-nav3.png" alt="apple icon">
+          </li>
+          <li>
+            <img src="images/ft-nav4.png" alt="android icon">
+          </li>
+          <li>
+            <img src="images/ft-nav5.png" alt="tv box icon">
+          </li>
+          <li>
+            <img src="images/ft-nav6.png" alt="huawei store icon">
+          </li>
+        </ul>
+      </nav>
+      <p>Công ty Cổ phần Viễn Thông FPT - Người đại diện: Ông Hoàng Việt Anh</p>
+      <p> Trụ sở: Tầng 8, tòa nhà FPT Tower, số 10 Phạm Văn Bạch, Cầu Giấy, Hà Nội</p>
+      <p>Điện thoại: 19006600. Email: support@fptplay.net</p>
+      <p>
+        Số giấy chứng nhận đăng ký kinh doanh: 0101778163 do Sở Kế Hoạch Đầu Tư
+        Thành Phố Hà Nội cấp vào ngày 28/07/2005
+      </p>
+      <p>
+        Giấy phép Cung cấp Dịch vụ Phát thanh, Truyền hình trên mạng Internet số
+        568/GP-BTTTT cấp ngày 7/12/2020.
+      </p>
+    </div>
+    <div class="footer__support">
+      <a href="#">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="#" class="btn btn--pill btn--primary">
+        <ion-icon name="alert-circle"></ion-icon>
+        <p>Hỗ trợ</p>
+      </a>
+      <div class="btn btn--pill btn--primary">
+        <ion-icon name="call"></ion-icon>
+        <p>19006600</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
