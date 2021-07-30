@@ -341,6 +341,7 @@ button.btn--pink,
     opacity: 0.2;
     width: 15.5rem;
     z-index: 10;
+    scrollbar-width: none;
     -webkit-transition: 300ms ease;
     transition: 300ms ease;
   }
@@ -425,8 +426,13 @@ button.btn--pink,
     color: #212121;
     padding: 0.5rem 1.125rem;
   }
+  .header__link.btn.btn--pill, .header__link.btn.btn--primary {
+    border-radius: unset;
+    background-color: unset;
+    padding: 0.5rem 1.125rem;
+  }
   .header__link.link-active, .header__link:hover, .header__link:focus, .header__link:hover::after {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2 !important;
     color: #ff6500;
     border-color: #ff6500 transparent transparent transparent;
   }

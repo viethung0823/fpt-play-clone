@@ -140,6 +140,7 @@
     opacity: 0.2;
     width: rem(248);
     z-index: 10;
+    scrollbar-width: none;
     transition: 300ms ease;
   }
 
@@ -224,14 +225,22 @@
     color: $text1;
     padding: rem(8) rem(18);
 
+    &.btn.btn--pill,
+    &.btn.btn--primary {
+      border-radius: unset;
+      background-color: unset;
+      padding: 0.5rem 1.125rem;
+    }
+
     &.link-active,
     &:hover,
     &:focus,
     &:hover::after {
-      background-color: #f2f2f2;
+      background-color: #f2f2f2 !important;
       color: $primary;
       border-color: $primary transparent transparent transparent;
     }
+
   }
 
   @include breakpoint-up (medium) {
